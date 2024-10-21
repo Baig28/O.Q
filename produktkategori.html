@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkter</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <h1>Produkter</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="åpningstider.html">Åpningstider</a></li>
+                <li><a href="kontaktinformasjon.html">Kontakt oss</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="product-list">
+        <div class="product">
+            <h2>T-Skjorte</h2>
+            <img src="svartfendi.png" alt="Produkt 1">
+            <p>Perfekt for du som liker komfort!</p>
+        </div>
+        <div class="product">
+            <h2>Elegant hatt</h2>
+            <img src="Brunhatt.png" alt="Produkt 2">
+            <p>Litt gammeldags, men fashion har ikke en alder</p>
+        </div>
+        <div class="product">
+            <h2>Julenissedrakt</h2>
+            <img src="Julenissedrakt.png" alt="Produkt 3">
+            <p>Komfortabel og finnes bare i barnestørrelse</p>
+        </div>
+        <div class="product">
+            <h2>Rosa kjole</h2>
+            <img src="rosakjole.png" alt="Produkt 4">
+            <p>Mykt stoff, men sitter veldig godt</p>
+        </div>
+        <div class="product">
+            <h2>Rød kjole</h2>
+            <img src="rødkjole.png" alt="Produkt 5">
+            <p>Veldig representabel kjole</p>
+        </div>
+    </section>
+    <section class="order">
+        <h2>Bestill produkter</h2>
+        <form id="orderForm">
+            <label for="email">Din e-post:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="products">Velg produkter:</label>
+            <select id="products" name="products" multiple required>
+                <option value="T-Skjorte">T-Skjorte</option>
+                <option value="Elegant hatt">Elegant hatt</option>
+                <option value="Julenissendrakt">Julenissendrakt</option>
+                <option value="Rosa kjole">Rosa kjole</option>
+                <option value="Rød kjole">Rød kjole</option>
+            </select>
+            <button type="submit">Send bestilling</button>
+        </form>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
